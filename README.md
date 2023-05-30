@@ -12,12 +12,18 @@ For e.g.POST `/api/ds/charCount` where the body request is
   ],
   "ignore_spaces": true
 }
-``` will return you a JSON response
+``` 
+
+will return you a JSON response of
 ```json
 {
   "charCount": 6
 }
 ```
+
+## API Endpoints
+
+Note: Different endpoints have different schema and request bodies, for other endpoints such as lexical_div/readability/synthetical_complexity please refer to http://3.1.194.140/docs for more information
 
 The following descriptive statistics are supported (`descriptive_stats.py` module):
 
@@ -37,8 +43,6 @@ The following descriptive statistics are supported (`descriptive_stats.py` modul
 * Tokenize text `/api/ds/tokenize`
 * Get words `/api/ds/getWords`
   
-Note: Different endpoints have different schema and request bodies, for other endpoints such as lexical_div/readability/synthetical_complexity please refer to http://3.1.194.140/docs for more information
-
 
 ### Deployment
 1. Spin up ec2 server on AWS account
